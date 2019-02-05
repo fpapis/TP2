@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="193.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="tp2.baignoire.BaignoireController">
+   <children>
+      <Label layoutX="14.0" layoutY="14.0" text="Volume de la baignoire" />
+      <Label layoutX="14.0" layoutY="49.0" text="Débit du robinet" />
+      <Label layoutX="14.0" layoutY="84.0" text="Débit de la fuite" />
+      <TextField fx:id="txtVolume" layoutX="158.0" layoutY="10.0" />
+      <TextField fx:id="txtDebitRobinet" layoutX="158.0" layoutY="45.0" />
+      <TextField fx:id="txtDebitFuite" layoutX="158.0" layoutY="80.0" />
+      <Button fx:id="btnEnregistrer" layoutX="506.0" layoutY="45.0" mnemonicParsing="false" onAction="#enregistrerParametres" text="Enregistrer" />
+      <ProgressBar layoutX="184.0" layoutY="159.0" prefHeight="18.0" prefWidth="396.0" progress="0.0" />
+      <Label layoutX="14.0" layoutY="159.0" text="Remplissage de la baignoire" />
+      <Button fx:id="btnRemplir" layoutX="300.0" layoutY="126.0" mnemonicParsing="false" onAction="#remplirBaignoire" text="Remplir la baignoire" />
+   </children>
+</AnchorPane>
